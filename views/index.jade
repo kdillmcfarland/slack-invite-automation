@@ -15,6 +15,13 @@ html
           h2 #{__('HEADER', community)}
         .content
           .information
+            div.confirm
+              label
+                input(type='checkbox', name="coc")#coc
+                | I've read the CoC
+              label
+                input(type='checkbox', name="non-male")#non-male
+                | I am non-male
             form(method="POST", action="/invite")#join-form.form
               input(type="email", name="email", autofocus, placeholder="#{__('ENTER_EMAIL')}")#slack-email.field
               if tokenRequired
@@ -29,6 +36,13 @@ html
       var form = document.getElementById('join-form');
       var email = document.getElementById('slack-email');
       var token = document.getElementById('slack-token');
+      var coc = document.getElementById('coc');
+      var nonMale = document.getElementById('non-male');
+      
+      form.style.visibility = "hidden";
+      coc.onclick = checkVisibility;
+      nonMale.onclick = checkVisibility;
+      
       form.addEventListener('submit', function(evt) {
         if (!email.value) {
           evt.preventDefault();
@@ -41,3 +55,12 @@ html
           evt.preventDefault();
         }
       });
+      
+      function checkVisibility() {
+          if (coc.checked && nonMale.checked) {
+              console.log("hola")
+              form.style.visibility = "visible";
+          } else {
+              form.style.visibility = "hidden";
+          }
+      }
