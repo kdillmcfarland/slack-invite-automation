@@ -37,7 +37,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    background: #fff url(../images/bg.jpeg) center top no-repeat;
+    background: #fff url(../images/bg.jpg) center top no-repeat;
     background-size: cover;
     /* background: rgb(86, 36, 87);
     background: -moz-linear-gradient(152deg, rgba(86, 36, 87, 1) 0%, rgba(136, 57, 138, 1) 60%, rgba(167, 169, 172, 1) 100%);
