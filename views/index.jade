@@ -18,11 +18,11 @@ html
             div.confirm
               label
                 input(type='checkbox', name="coc")#coc
-                | I've read the CoC
+                | I have read the #[a(href="https://github.com/rladies/starter-kit/wiki/Code-of-Conduct", target='_blank') CoC]
               label
                 input(type='checkbox', name="non-male")#non-male
-                | I am non-male
-            form(method="POST", action="/invite")#join-form.form
+                | I identify as #[a(href="https://en.wikipedia.org/wiki/Cisgender", target='_blank') non-cis-male]
+            form(method="POST", action="/invite", autocomplete="off")#join-form.form
               input(type="email", name="email", autofocus, placeholder="#{__('ENTER_EMAIL')}")#slack-email.field
               if tokenRequired
                 input(type="text", name="token", placeholder="#{__('ENTER_TOKEN')}")#slack-token.field
@@ -39,7 +39,7 @@ html
       var coc = document.getElementById('coc');
       var nonMale = document.getElementById('non-male');
       
-      form.style.visibility = "hidden";
+      form.style.opacity = 0;
       coc.onclick = checkVisibility;
       nonMale.onclick = checkVisibility;
       
@@ -58,9 +58,8 @@ html
       
       function checkVisibility() {
           if (coc.checked && nonMale.checked) {
-              console.log("hola")
-              form.style.visibility = "visible";
+              form.style.opacity = 1;
           } else {
-              form.style.visibility = "hidden";
+              form.style.opacity = 0;
           }
       }
