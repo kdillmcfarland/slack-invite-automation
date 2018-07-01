@@ -29,6 +29,9 @@ html
               input(type="submit", value="Join").submit
               if !!recaptchaSiteKey
                 div(class="g-recaptcha", data-sitekey="#{recaptchaSiteKey}")
+        .footer
+            img.logo-img(src="images/community.png" alt="Community logo")
+            img.logo-img(src="images/logo.png" alt="R-Ladies logo")
     if !!recaptchaSiteKey
        script(src='https://www.google.com/recaptcha/api.js')
     script.
