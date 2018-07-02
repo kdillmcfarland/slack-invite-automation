@@ -5,6 +5,7 @@ html
     meta(name="viewport", content="width=device-width, initial-scale=1")
     title #{__('TITLE', community)}
     link(href="css/style.css", rel="stylesheet", type="text/css")
+    link(rel="stylesheet", href="https://use.fontawesome.com/releases/v5.1.0/css/all.css", integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt", crossorigin="anonymous")
     link(href="//fonts.googleapis.com/css?family=Lato:300,400,700,900,700italic|Open+Sans:700italic,400,600,300,700,800", rel="stylesheet", type="text/css")
   body
     #wrapper
@@ -13,12 +14,15 @@ html
           h1
             strong #{community}
           h2 #{__('HEADER', community)}
+          div.contact 
+            a(href="mailto:slack@rladies.org")
+              i.far.fa-envelope.fa-2x(aria-hidden='true') 
         .content
           .information
             div.confirm
               label
                 input(type='checkbox', name="coc")#coc
-                | I have read the #[a(href="https://github.com/rladies/starter-kit/wiki/Code-of-Conduct", target='_blank') CoC]
+                | I have read and agree to the #[a(href="https://github.com/rladies/starter-kit/wiki/Code-of-Conduct", target='_blank') CoC]
               label
                 input(type='checkbox', name="non-male")#non-male
                 | I identify as #[a(href="https://en.wikipedia.org/wiki/Cisgender", target='_blank') non-cis-male]

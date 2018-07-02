@@ -4,6 +4,7 @@ body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fiel
     margin: 0;
     padding: 0;
     cursor: default;
+    font-family: 'Open Sans', sans-serif;
 }
 
 table {
@@ -63,7 +64,7 @@ html, body {
 }
 
 .header {
-    margin-top: 100px;
+    margin-top: 90px;
     margin-bottom: 40px;
 }
 
@@ -94,8 +95,8 @@ h2 strong {
 }
 
 .information {
-    width: 480px;
-    padding-top: 35px;
+    width: 100%;
+    padding-top: 15px;
     margin: 0 auto;
 }
 
@@ -111,11 +112,21 @@ h3 {
     display: block;
 }
 
+.contact {
+    margin: 10px 0;
+    text-align: center;
+}
+
+i {
+    color: #ffffff;
+}
+
 .form {
     position: relative;
     width: 478px;
-    margin-top: 20px;
+    padding-top: 20px;
     transition: 1s ease;
+    margin: 0 auto;
 }
 
 .field {
@@ -155,7 +166,7 @@ h3 {
 .submit {
     position: absolute;
     right: 15px;
-    top: 13px;
+    top: 33px;
     padding: 3px 10px;
     -webkit-border-radius: 30px;
     -moz-border-radius: 30px;
