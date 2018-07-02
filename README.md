@@ -79,7 +79,7 @@ $ npm start
 
 You can access <http://localhost:3000> on your web browser.
 
-![](screenshots/join-rladies.jpg)
+![](screenshots/join-rladies.png)
 
 ## Run with Docker
 
