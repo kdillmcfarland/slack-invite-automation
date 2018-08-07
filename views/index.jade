@@ -25,7 +25,7 @@ html
                 | I have read and agree to the #[a(href="https://github.com/rladies/starter-kit/wiki/Code-of-Conduct", target='_blank') CoC]
               label
                 input(type='checkbox', name="non-male")#non-male
-                | I identify as #[a(href="https://en.wikipedia.org/wiki/Cisgender", target='_blank') non-cis-male]
+                | I identify as women or gender minority
             form(method="POST", action="/invite", autocomplete="off")#join-form.form
               input(type="email", name="email", autofocus, placeholder="#{__('ENTER_EMAIL')}")#slack-email.field
               if tokenRequired
