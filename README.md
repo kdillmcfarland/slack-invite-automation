@@ -9,10 +9,7 @@ Inspired by
 [How I hacked Slack into a community platform with Typeform](https://levels.io/slack-typeform-auto-invite-sign-ups/)
 and Socket.io's Slack page.
 
-This project supports Heroku, Azure and Cloud Foundry.
-
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-[![Deploy to Azure](http://azuredeploy.net/deploybutton.png)](https://azuredeploy.net/)
 
 ## Settings
 
@@ -81,24 +78,6 @@ You can access <http://localhost:3000> on your web browser.
 
 ![](screenshots/join-rladies.png)
 
-## Run with Docker
-
-It's easy to run this service if you have installed Docker on your system.
-Pull [the Docker image from Docker Hub](https://hub.docker.com/r/outsideris/slack-invite-automation/).
-
-```shell
-$ docker pull outsideris/slack-invite-automation
-$ docker run -it --rm -e COMMUNITY_NAME="YOUR-TEAM-NAME" -e SLACK_URL="YOUR-TEAM.slack.com" -e SLACK_TOKEN="YOUR-ACCESS-TOKEN" -p 3000:3000 outsideris/slack-invite-automation
-```
-
-Or, You can build a Docker image yourself.
-
-```shell
-$ git clone https://github.com/outsideris/slack-invite-automation.git
-$ cd slack-invite-automation
-$ docker build -t outsideris/slack-invite-automation .
-$ docker run -it --rm -e COMMUNITY_NAME="YOUR-TEAM-NAME" -e SLACK_URL="YOUR-TEAM.slack.com" -e SLACK_TOKEN="YOUR-ACCESS-TOKEN" -p 3000:3000 outsideris/slack-invite-automation
-```
 
 ## Issue token
 **You should generate the token in admin user, not owner.** If you generate the token in owner user, a `missing_scope` error may occur.
