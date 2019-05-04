@@ -21,8 +21,14 @@ address, caption, dfn, th, var {
     font-weight: normal;
 }
 
+ul {
+    list-style-type: circle;
+    text-align: left;
+    margin-left: 50px;
+}
+
 li {
-    list-style: none;
+    padding: 2px 0px;
 }
 
 caption, th {
@@ -38,7 +44,7 @@ html, body {
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
-    background: #fff;
+    background: rgba(136, 57, 138, 0.1);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#562457", endColorstr="#a7a9ac", GradientType=1);
     height: 100%;
     width: 100%;
@@ -68,6 +74,10 @@ html, body {
     margin-bottom: 40px;
 }
 
+.content {
+    margin-bottom: 40px;
+}
+
 h1 {
     font-family: 'Open Sans', sans-serif;
     color: #181818;
@@ -87,6 +97,7 @@ h2 {
     font-weight: 300;
     font-size: 20px;
     color: #181818;
+    margin: 10px;
 }
 
 h2 strong {
@@ -95,21 +106,24 @@ h2 strong {
 }
 
 .information {
-    width: 100%;
+    max-width: 600px;
     padding-top: 15px;
     margin: 0 auto;
+    text-align: center;
 }
 
 h3 {
-    font-size: 28px;
-    font-weight: 600;
-    color: #ffffff;
+    text-align: center;
+    margin: 10px;
+    font-weight: 300;
+    color: #181818;
 }
 
 .information p {
     font-size: 16px;
-    color: #ffffff;
     display: block;
+    text-align: justify;
+    padding: 3px 10px;
 }
 
 .contact {
@@ -190,7 +204,7 @@ i {
 }
 
 a {
-    color: rgba(167, 169, 172, 1);
+    color: #562457;
 }
 
 a:visited, a:hover {
@@ -206,6 +220,15 @@ a:visited, a:hover {
     width: 100%;
     color: #88398a;
     justify-content: center;
+    flex-direction: column;
+}
+
+.intro, #join-form {
+    display: none;
+}
+
+#div-1 {
+    display: block;
 }
 
 .confirm label {
