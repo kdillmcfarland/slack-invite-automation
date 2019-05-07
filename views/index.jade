@@ -37,6 +37,13 @@ html
                   | To facilitate communication and enable networking in a safe environment among all R-Ladies worldwide this Slack was created.
               div.intro#div-3(onclick="toggle_visibility('div-3')")
                 h2
+                  | Who is this Slack for?
+                p
+                  | This slack is for people that identify as a woman or gender minority. 
+                p
+                  | If you are a cis-male (your were born male and also identify as male), please do not sign up.
+              div.intro#div-4(onclick="toggle_visibility('div-4')")
+                h2
                   | What should and can you do on this Slack?
                 p
                   | In principle anything that contributes to a friendly and welcoming community.  
@@ -56,7 +63,9 @@ html
                     | Share resources
                   li
                     | Bring in your ideas for the R-Ladies community
-              div.intro#div-4(onclick="toggle_visibility('div-4')")
+                  li
+                    | ...
+              div.intro#div-5(onclick="toggle_visibility('div-5')")
                 h2
                   | What is this Slack not for?
                 ul 
@@ -67,7 +76,7 @@ html
                     | Share inappropriate content. Examples are: disturbing images or videos, fashions that promote negative values, health risks or bad habits, false information, offensive or mocking content.
                 p
                   | If you are unsure whether a post is suitable, best is to ask @Community Management Team within Slack or send an email at #[a(href="mailto:slack@rladies.org") slack@rladies.org].
-              div.intro#div-5(onclick="toggle_visibility('div-5')")
+              div.intro#div-6(onclick="toggle_visibility('div-6')")
                 h2
                   | Code of Conduct
                 h3
@@ -75,12 +84,12 @@ html
                 p
                   | R-Ladies has a Code of Conduct that applies to all activities, including the R-Ladies Community Slack. You can read the full Code of Conduct #[a(href="https://github.com/rladies/starter-kit/wiki/Code-of-Conduct") in GitHub]
                 p
-                  | A Code of Conduct is a list of rules that support an inclusive culture and protect the members of a group. Violating parts of the Code of Conduct has consequences.
+                  | A Code of Conduct is a list of rules that support an inclusive culture and protect the members of a group. Violating parts of the Code of Conduct has consequences, that are explained further down.
                 p
                   | R-Ladies code of conduct applies to all R-Ladies spaces, including meetups, Twitter, Slack, mailing lists, both online and offline. Anyone who violates the R-Ladies code of conduct may be sanctioned or expelled from these spaces at the discretion of the Global Leadership Team.
                 p
                   | Simply put - be nice, respect others and contribute to a friendly, safe and welcoming atmosphere. 
-              div.intro#div-6(onclick="toggle_visibility('div-6')")
+              div.intro#div-7(onclick="toggle_visibility('div-7')")
                 h2
                   | Code of Conduct
                 h3
@@ -101,18 +110,19 @@ html
                     | Continued one-on-one communication after requests to cease.
                   li  
                     | You find the full list here
-              div.intro#div-7(onclick="toggle_visibility('div-7')")
+              div.intro#div-8(onclick="toggle_visibility('div-8')")
                 h2
                   | Code of Conduct
                 h3
                   | Code of Conduct #3
                 p
                   | More specifically, we ask you to
-                p
-                  | Not share anything that was shared on Slack outside this Slack. If you want to share something, please ask the person involved for their consent.
-                p
-                  | Avoid overtly sexual or offensive usernames or profile photos which might detract from a friendly, safe and welcoming environment for all.
-              div.intro#div-8(onclick="toggle_visibility('div-8')")
+                ul
+                  li
+                    | Not share anything that was shared on Slack outside this Slack. If you want to share something, please ask the person involved for their consent.
+                  li
+                    | Avoid overtly sexual or offensive usernames or profile photos which might detract from a friendly, safe and welcoming environment for all.
+              div.intro#div-9(onclick="toggle_visibility('div-9')")
                 h2
                   | Reporting
                 p
@@ -123,9 +133,9 @@ html
                   | Participants asked to stop any harassing behavior are expected to comply immediately.
                 p
                   | If a participant engages in harassing behavior, the Global Leadership Team may take any action they deem appropriate, up to and including expulsion from all R-Ladies spaces (including meetups, Twitter, Slack, mailing lists, both online and offline) and identification of the participant as a harasser to other R-Ladies members or the general public.
-              div.intro#div-9(onclick="toggle_visibility('div-9')")
+              div.intro#div-10(onclick="toggle_visibility('div-10')")
                 h2
-                  | FAQ
+                  | Here are some questions that we are often asked
                 p
                   b Who is an “R-Lady”?
                 p
@@ -142,7 +152,7 @@ html
                   b Gender neutral language
                 p
                   | We would like to encourage gender neutral language in this Slack. Depending on context, addressing someone as “ladies” or “guys” might not be gender neutral. There are plenty reasons for a preference of being addressed in a gender neutral way and we would like to respect that.
-              div.intro#div-10(onclick="toggle_visibility('div-10')")
+              div.intro#div-11(onclick="toggle_visibility('div-11')")
                 h2
                   | Contact
                 p
@@ -188,7 +198,7 @@ html
         var e = document.getElementById(id);
         var number = parseInt(id.split('-')[1]) + 1
         
-        if(number < 11) {
+        if(number < 12) {
           var next = document.getElementById('div-' + number)       
         } else {
           var next = document.getElementById('join-form')
