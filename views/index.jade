@@ -13,40 +13,52 @@ html
         .header
           h1
             strong #{community}
-          h2 #{__('HEADER', community)}
-          div.contact 
-            a(href="mailto:slack@rladies.org")
-              i.far.fa-envelope.fa-2x(aria-hidden='true') 
         .content
           .information
             div.confirm
-              div.intro#div-1(onclick="toggle_visibility('div-1')")
+              div.intro#div-1
+                h2 
+                  strong Welcome
+                p
+                  | Welcome and thank you for your interest in the R-Ladies community Slack!
+                p
+                  | Before signing up we would like to guide you through a few important pieces of information regarding the access and use of this Slack.
+                div.pages
+                  button.button(onclick="toggle_visibility('div-1', 'div-2')") Next page
+              div.intro#div-2
                 h2
-                  | Welcome
+                  strong What is R-Ladies
                 p
-                  b Welcome 
-                  | and thank you for your interest in the R-Ladies community Slack!
+                  | #[a(href="https://rladies.org/") R-Ladies] is a 
+                  b global organisation that aims to promote gender diversity in the R community 
+                  | by creating a network of R users, mainly through local meetup chapters. There are currently over more than #[a(href="https://gqueiroz.shinyapps.io/rshinylady/") 40 countries] R-Ladies chapters worldwide. Additionally, there are many more R-Ladies that do not have a chapter nearby, but use R and identify as women or gender minorities.
                 p
-                  | Before signing up we would like to guide you through a few important pieces of information regarding the access and use of this Slack. 
-              div.intro#div-2(onclick="toggle_visibility('div-2')")
+                  | To 
+                  b facilitate communication 
+                  | and 
+                  b enable networking in a safe environment 
+                  | among all R-Ladies worldwide 
+                  b this Slack was set up.
+                div.pages
+                  button.button(onclick="toggle_visibility('div-2', 'div-1')") Previous page
+                  button.button(onclick="toggle_visibility('div-2', 'div-3')") Next page
+              div.intro#div-3
                 h2
-                  | What is R-Ladies
+                  strong Who is this Slack for?
                 p
-                  | #[a(href="https://rladies.org/") R-Ladies] is a global organisation that aims to promote gender diversity in the R community by creating a network of R users, mainly through local meetup chapters. There are currently over more than #[a(href="https://gqueiroz.shinyapps.io/rshinylady/") 40 countries] R-Ladies chapters worldwide. Additionally, there are many more R-Ladies that do not have a chapter nearby, but use R and identify as women or gender minorities.
+                  | This slack is for people that 
+                  b identify as a woman or gender minority. 
                 p
-                  | To facilitate communication and enable networking in a safe environment among all R-Ladies worldwide this Slack was created.
-              div.intro#div-3(onclick="toggle_visibility('div-3')")
+                  b If you are a cis-male (your were born male and also identify as male), please do not sign up.
+                div.pages
+                  button.button(onclick="toggle_visibility('div-3', 'div-2')") Previous page
+                  button.button(onclick="toggle_visibility('div-3', 'div-4')") Next page
+              div.intro#div-4
                 h2
-                  | Who is this Slack for?
+                  strong What should and can you do on this Slack?
                 p
-                  | This slack is for people that identify as a woman or gender minority. 
-                p
-                  | If you are a cis-male (your were born male and also identify as male), please do not sign up.
-              div.intro#div-4(onclick="toggle_visibility('div-4')")
-                h2
-                  | What should and can you do on this Slack?
-                p
-                  | In principle anything that contributes to a friendly and welcoming community.  
+                  | In principle 
+                  b anything that contributes to a friendly and welcoming community.  
                 ul
                   | Here are a few examples:
                   li
@@ -65,37 +77,52 @@ html
                     | Bring in your ideas for the R-Ladies community
                   li
                     | ...
-              div.intro#div-5(onclick="toggle_visibility('div-5')")
+                div.pages
+                  button.button(onclick="toggle_visibility('div-4', 'div-3')") Previous page
+                  button.button(onclick="toggle_visibility('div-4', 'div-5')") Next page
+              div.intro#div-5
                 h2
-                  | What is this Slack not for?
+                  strong What is this Slack not for?
                 ul 
-                  | There are a few things this Slack is not meant for
+                  | There are a few things 
+                  b this Slack is not meant for
                   li
-                    | Promote commercial products (if you would like to provide a discount to R-Ladies members, please discuss with the leadership team first).
+                    | Promoting commercial products (if you would like to provide a discount to R-Ladies members, please discuss with the leadership team first).
                   li
-                    | Share inappropriate content. Examples are: disturbing images or videos, fashions that promote negative values, health risks or bad habits, false information, offensive or mocking content.
+                    | Sharing inappropriate content. Examples are: disturbing images or videos, fashions that promote negative values, health risks or bad habits, false information, offensive or mocking content.
                 p
                   | If you are unsure whether a post is suitable, best is to ask @Community Management Team within Slack or send an email at #[a(href="mailto:slack@rladies.org") slack@rladies.org].
-              div.intro#div-6(onclick="toggle_visibility('div-6')")
+                div.pages
+                  button.button(onclick="toggle_visibility('div-5', 'div-4')") Previous page
+                  button.button(onclick="toggle_visibility('div-5', 'div-6')") Next page
+              div.intro#div-6
                 h2
                   | Code of Conduct
                 h3
-                  | Code of Conduct #1
+                  strong Code of Conduct #1
                 p
                   | R-Ladies has a Code of Conduct that applies to all activities, including the R-Ladies Community Slack. You can read the full Code of Conduct #[a(href="https://github.com/rladies/starter-kit/wiki/Code-of-Conduct") in GitHub]
                 p
-                  | A Code of Conduct is a list of rules that support an inclusive culture and protect the members of a group. Violating parts of the Code of Conduct has consequences, that are explained further down.
+                  | A Code of Conduct is a 
+                  b list of rules that support an inclusive culture and protect the members of a group. Violating 
+                  | parts of the 
+                  b Code of Conduct has consequences, 
+                  | that are explained further down.
                 p
                   | R-Ladies code of conduct applies to all R-Ladies spaces, including meetups, Twitter, Slack, mailing lists, both online and offline. Anyone who violates the R-Ladies code of conduct may be sanctioned or expelled from these spaces at the discretion of the Global Leadership Team.
                 p
-                  | Simply put - be nice, respect others and contribute to a friendly, safe and welcoming atmosphere. 
-              div.intro#div-7(onclick="toggle_visibility('div-7')")
+                  b Simply put - be nice, respect others and contribute to a friendly, safe and welcoming atmosphere. 
+                div.pages
+                  button.button(onclick="toggle_visibility('div-6', 'div-5')") Previous page
+                  button.button(onclick="toggle_visibility('div-6', 'div-7')") Next page
+              div.intro#div-7
                 h2
                   | Code of Conduct
                 h3
-                  | Code of Conduct #2
+                  strong Code of Conduct #2
                 p
-                  | R-Ladies is dedicated to providing a harassment-free experience for everyone. We do not tolerate harassment of participants in any form.
+                  | R-Ladies is dedicated to providing a harassment-free experience for everyone. 
+                  b We do not tolerate harassment of participants in any form.
                 ul
                   | Here is a selection of what “Harassment” includes
                   li
@@ -109,33 +136,49 @@ html
                   li
                     | Continued one-on-one communication after requests to cease.
                   li  
-                    | You find the full list here
-              div.intro#div-8(onclick="toggle_visibility('div-8')")
+                    | You find the full list #[a(href="https://github.com/rladies/starter-kit/wiki/Code-of-Conduct") here]
+                div.pages
+                  button.button(onclick="toggle_visibility('div-7', 'div-6')") Previous page
+                  button.button(onclick="toggle_visibility('div-7', 'div-8')") Next page
+              div.intro#div-8
                 h2
                   | Code of Conduct
                 h3
-                  | Code of Conduct #3
-                p
-                  | More specifically, we ask you to
+                  strong Code of Conduct #3
                 ul
+                  | More specifically, we ask you to
                   li
-                    | Not share anything that was shared on Slack outside this Slack. If you want to share something, please ask the person involved for their consent.
+                    | Not share anything that was shared on Slack outside this Slack. If you want to share any content, please ask the person involved for their consent.
                   li
                     | Avoid overtly sexual or offensive usernames or profile photos which might detract from a friendly, safe and welcoming environment for all.
-              div.intro#div-9(onclick="toggle_visibility('div-9')")
+                div.pages
+                  button.button(onclick="toggle_visibility('div-8', 'div-7')") Previous page
+                  button.button(onclick="toggle_visibility('div-8', 'div-9')") Next page
+              div.intro#div-9
                 h2
-                  | Reporting
+                  strong Reporting
                 p
                   | If you are being harassed by a member/guest/participant of/at R-Ladies, notice that someone else is being harassed, or have any other concerns, please contact the Global Leadership Team via reporting@rladies.org. 
                 h2
-                  | Consequences
+                  strong Consequences
                 p
                   | Participants asked to stop any harassing behavior are expected to comply immediately.
                 p
                   | If a participant engages in harassing behavior, the Global Leadership Team may take any action they deem appropriate, up to and including expulsion from all R-Ladies spaces (including meetups, Twitter, Slack, mailing lists, both online and offline) and identification of the participant as a harasser to other R-Ladies members or the general public.
-              div.intro#div-10(onclick="toggle_visibility('div-10')")
+                div.pages
+                  button.button(onclick="toggle_visibility('div-9', 'div-8')") Previous page
+                  button.button(onclick="toggle_visibility('div-9', 'div-10')") Next page
+              div.intro#div-10
+                h2 
+                  strong Gender neutral language
+                p
+                  | We would like to encourage gender neutral language in this Slack. Please avoid addressing people as “ladies” or “guys”. There are plenty reasons for a preference of being addressed in a gender neutral way and we would like to respect that.
+                div.pages
+                  button.button(onclick="toggle_visibility('div-10', 'div-9')") Previous page
+                  button.button(onclick="toggle_visibility('div-10', 'div-11')") Next page
+              div.intro#div-11
                 h2
-                  | Here are some questions that we are often asked
+                  strong Here are some questions that we are often asked
                 p
                   b Who is an “R-Lady”?
                 p
@@ -147,12 +190,11 @@ html
                 p
                   b Does this also mean that R-Ladies meetups are for women and gender minorities only? 
                 p
-                  | Most R-Ladies chapters have the policy that organisers and presenters are women or gender minorities, but welcome allies to participate in meetups as guest. Each chapter has a contact email address and we encourage you to contact the meetup organizers if something is unclear. 
-                p
-                  b Gender neutral language
-                p
-                  | We would like to encourage gender neutral language in this Slack. Depending on context, addressing someone as “ladies” or “guys” might not be gender neutral. There are plenty reasons for a preference of being addressed in a gender neutral way and we would like to respect that.
-              div.intro#div-11(onclick="toggle_visibility('div-11')")
+                  | Most R-Ladies chapters have the policy that organisers and presenters are women or gender minorities, but welcome allies to participate in meetups as guest. Each chapter has a contact email address and we encourage you to contact the meetup organizers if something is unclear.
+                div.pages
+                  button.button(onclick="toggle_visibility('div-11', 'div-10')") Previous page
+                  button.button(onclick="toggle_visibility('div-11', 'div-12')") Next page
+              div.intro#div-12
                 h2
                   | Contact
                 p
@@ -163,6 +205,8 @@ html
                   | If you would like to report harassment or violation of parts of the Code of Conduct, please contact #[a(href="mailto:reporting@rladies.org") reporting@rladies.org].
                 p
                   | Within Slack you can contact us via @Community Management Team.
+                button.button(onclick="toggle_visibility('div-12', 'div-11')") Previous page
+                button.button(onclick="toggle_visibility('div-12', 'div-13')") Next page
             form(method="POST", action="/invite", autocomplete="off")#join-form.form
               input(type="email", name="email", autofocus, placeholder="#{__('ENTER_EMAIL')}")#slack-email.field
               if tokenRequired
@@ -194,12 +238,12 @@ html
         }
       });
       
-      function toggle_visibility(id) {
-        var e = document.getElementById(id);
-        var number = parseInt(id.split('-')[1]) + 1
-        
-        if(number < 12) {
-          var next = document.getElementById('div-' + number)       
+      function toggle_visibility(current, next) {
+        var e = document.getElementById(current);
+        var number = parseInt(next.split('-')[1])
+
+        if(number < 13) {
+          var next = document.getElementById(next)
         } else {
           var next = document.getElementById('join-form')
         }
