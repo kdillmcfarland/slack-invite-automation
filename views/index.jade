@@ -27,7 +27,7 @@ html
                 p
                   | Before signing up, we would like to guide you through a few essential pieces of information regarding the access and use of this Slack.
                 div.pages
-                  button.button(onclick="toggle_visibility('div-1', 'div-2')") Next page
+                  button.button(onclick="toggle_visibility('div-1', 'div-2')") Next
               div.intro#div-2
                 h2
                   strong What is R-Ladies
@@ -42,8 +42,8 @@ html
                   | among all R-Ladies worldwide 
                   b we set up this Slack.
                 div.pages
-                  button.button(onclick="toggle_visibility('div-2', 'div-1')") Previous page
-                  button.button(onclick="toggle_visibility('div-2', 'div-3')") Next page
+                  button.button(onclick="toggle_visibility('div-2', 'div-1')") Previous
+                  button.button(onclick="toggle_visibility('div-2', 'div-3')") Next
               div.intro#div-3
                 h2
                   strong For whom is this Slack?
@@ -54,8 +54,8 @@ html
                 p
                   b If you are a cis-male (you were born male, and you also identify as male), please do not sign up.
                 div.pages
-                  button.button(onclick="toggle_visibility('div-3', 'div-2')") Previous page
-                  button.button(onclick="toggle_visibility('div-3', 'div-4')") Next page
+                  button.button(onclick="toggle_visibility('div-3', 'div-2')") Previous
+                  button.button(onclick="toggle_visibility('div-3', 'div-4')") Next
               div.intro#div-4
                 h2
                   strong What should and can you do on this Slack?
@@ -79,8 +79,8 @@ html
                   li
                     | Bring in your ideas for the R-Ladies community
                 div.pages
-                  button.button(onclick="toggle_visibility('div-4', 'div-3')") Previous page
-                  button.button(onclick="toggle_visibility('div-4', 'div-5')") Next page
+                  button.button(onclick="toggle_visibility('div-4', 'div-3')") Previous
+                  button.button(onclick="toggle_visibility('div-4', 'div-5')") Next
               div.intro#div-5
                 h2
                   strong What is this Slack not for?
@@ -96,8 +96,8 @@ html
                 p
                   | If you are unsure whether a post is suitable, best is to ask @Community Management Team within Slack or send an email at #[a(href="mailto:slack@rladies.org") slack@rladies.org].
                 div.pages
-                  button.button(onclick="toggle_visibility('div-5', 'div-4')") Previous page
-                  button.button(onclick="toggle_visibility('div-5', 'div-6')") Next page
+                  button.button(onclick="toggle_visibility('div-5', 'div-4')") Previous
+                  button.button(onclick="toggle_visibility('div-5', 'div-6')") Next
               div.intro#div-6
                 h2
                   strong Code of Conduct
@@ -121,8 +121,8 @@ html
                 p
                   | You find the full R-Ladies Code of Conduct #[a(href="https://github.com/rladies/starter-kit/wiki/Code-of-Conduct") here] in the English, Spanish and Portuguese versions of our code of conduct.
                 div.pages
-                  button.button(onclick="toggle_visibility('div-6', 'div-5')") Previous page
-                  button.button(onclick="toggle_visibility('div-6', 'div-7')") Next page
+                  button.button(onclick="toggle_visibility('div-6', 'div-5')") Previous
+                  button.button(onclick="toggle_visibility('div-6', 'div-7')") Next
               div.intro#div-7
                 h2
                   strong Code of Conduct
@@ -134,8 +134,8 @@ html
                   li
                     | Avoid overtly sexual or offensive usernames or profile photos which might detract from a friendly, safe and welcoming environment for all.
                 div.pages
-                  button.button(onclick="toggle_visibility('div-7', 'div-6')") Previous page
-                  button.button(onclick="toggle_visibility('div-7', 'div-8')") Next page
+                  button.button(onclick="toggle_visibility('div-7', 'div-6')") Previous
+                  button.button(onclick="toggle_visibility('div-7', 'div-8')") Next
               div.intro#div-8
                 h2
                   strong Reporting
@@ -151,8 +151,8 @@ html
                   | Participants asked to stop any harassing behaviour are expected to comply immediately. 
                   | If a participant engages in harassing behaviour, the Global Leadership Team may take any action they deem appropriate, up to and including expulsion from all R-Ladies spaces (including meetups, Twitter, Slack, mailing lists, both online and offline) and identification of the participant as a harasser to other R-Ladies members or the general public.
                 div.pages
-                  button.button(onclick="toggle_visibility('div-8', 'div-7')") Previous page
-                  button.button(onclick="toggle_visibility('div-8', 'div-9')") Next page
+                  button.button(onclick="toggle_visibility('div-8', 'div-7')") Previous
+                  button.button(onclick="toggle_visibility('div-8', 'div-9')") Next
               div.intro#div-9
                 h2 
                   strong Gender neutral language
@@ -162,8 +162,8 @@ html
                 p
                   | There are plenty of reasons for a preference of being addressed in a gender-neutral way and we would like to respect that.
                 div.pages
-                  button.button(onclick="toggle_visibility('div-9', 'div-8')") Previous page
-                  button.button(onclick="toggle_visibility('div-9', 'div-10')") Next page
+                  button.button(onclick="toggle_visibility('div-9', 'div-8')") Previous
+                  button.button(onclick="toggle_visibility('div-9', 'div-10')") Next
               div.intro#div-10
                 h2
                   strong Contact
@@ -176,8 +176,8 @@ html
                 p
                   | Within Slack you can contact us via "@Community Management Team".
                 div.pages
-                  button.button(onclick="toggle_visibility('div-10', 'div-9')") Previous page
-                  button.button(onclick="toggle_visibility('div-10', 'div-11')") Next page
+                  button.button(onclick="toggle_visibility('div-10', 'div-9')") Previous
+                  button.button(onclick="toggle_visibility('div-10', 'div-11')") Next
             form(method="POST", action="/invite", autocomplete="off")#join-form.form
               input(type="email", name="email", autofocus, placeholder="#{__('ENTER_EMAIL')}")#slack-email.field
               if tokenRequired
