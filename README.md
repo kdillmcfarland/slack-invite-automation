@@ -8,6 +8,18 @@ Custom web app to invite to the R-Ladies Community Slack. This is forked from th
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
+<!-- TOC -->
+
+- [Settings](#settings)
+    - [`config.js`](#configjs)
+    - [Heroku](#heroku)
+- [Run](#run)
+- [Issue token](#issue-token)
+    - [OAuth tokens](#oauth-tokens)
+- [Change the app](#change-the-app)
+
+<!-- /TOC -->
+
 ## Settings
 
 You can set variables for your own purpose in `config.js` or environment variables.
