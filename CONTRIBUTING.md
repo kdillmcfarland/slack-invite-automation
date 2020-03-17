@@ -12,8 +12,8 @@ The code is written in [jade](http://jade-lang.com/). Jade is a Node template en
 
 ## Change text
 
-To change the text go to `[views > index.jade](views/index.jade)`. 
+To change the text go to [`views > index.jade`](views/index.jade). 
 
 ## Change style
 
-To change styles go to `[public > css > style.css](public/css/style.css)`
+To change styles go to [`public > css > style.css`](public/css/style.css)
