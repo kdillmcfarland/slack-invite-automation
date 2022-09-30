@@ -1,8 +1,8 @@
 module.exports = {
     // your community or team name to display on join page.
-    community: process.env.COMMUNITY_NAME || 'R-Ladies Community Slack',
+    community: process.env.COMMUNITY_NAME || 'R-Ladies Seattle',
     // your slack team url (ex: socketio.slack.com)
-    slackUrl: process.env.SLACK_URL || 'rladies-community.slack.com',
+    slackUrl: process.env.SLACK_URL || 'rladies-sea.slack.com',
     // access token of slack
     // see https://github.com/outsideris/slack-invite-automation#issue-token
     //
@@ -10,7 +10,7 @@ module.exports = {
     //   curl -X POST 'https://YOUR-SLACK-TEAM.slack.com/api/users.admin.invite' \
     //   --data 'email=EMAIL&token=TOKEN&set_active=true' \
     //   --compressed
-    slacktoken: process.env.SLACK_TOKEN || 'YOUR-ACCESS-TOKEN',
+    slacktoken: process.env.SLACK_TOKEN || 'SLACK_TOKEN',
     // an optional security measure - if it is set, then that token will be required to get invited.
     inviteToken: process.env.INVITE_TOKEN || null,
     // an optional security measure - if both are set, then recaptcha will be used.
