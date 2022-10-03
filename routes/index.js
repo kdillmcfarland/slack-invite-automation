@@ -18,10 +18,12 @@ router.post('/invite', function(req, res) {
   if (req.body.email && (!config.inviteToken || (!!config.inviteToken && req.body.token === config.inviteToken))) {
     function doInvite() {
       request.post({
-          url: 'https://'+ config.slackUrl + '/api/users.admin.invite',
+          url: 'https://'+ config.slackUrl + '/api/chat.postMessage',
           form: {
             email: req.body.email,
+            text: req.body.email,
             token: config.slacktoken,
+            channel: 'C044400FB6K',
             set_active: true
           }
         }, function(err, httpResponse, body) {
@@ -34,7 +36,7 @@ router.post('/invite', function(req, res) {
           if (body.ok) {
             res.render('result', {
               community: config.community,
-              message: 'Success! Check &ldquo;'+ req.body.email +'&rdquo; for an invite from Slack.'
+              message: 'Success! Once an admin approves your request, you will receive an invite from Slack to'+ req.body.email 
             });
           } else {
             let error = body.error;
